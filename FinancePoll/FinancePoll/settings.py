@@ -33,7 +33,7 @@ SECRET_KEY = env('SECRET_KEY')
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['167.99.244.50']
 
 
 # Application definition
