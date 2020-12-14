@@ -91,21 +91,18 @@ WSGI_APPLICATION = 'FinancePoll.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    # read os.environ['DATABASE_URL'] and raises ImproperlyConfigured exception if not found
-    'default': env.db(),
-}
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'pollsdb', 
-#         'USER': 'dbadmin', 
-#         'PASSWORD': 'superUnsafe123passsword',
-#         'HOST': '', 
-#         'PORT': '',
-#     }
-# }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pollsdb', 
+        'USER': 'dbadmin', 
+        'PASSWORD': 'superUnsafe123passsword',
+        'HOST': 'localhost', 
+        'PORT': '',
+    }
+}
 
 
 REST_FRAMEWORK = {
